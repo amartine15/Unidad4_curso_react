@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Seccion_registro from './componentes/Seccion_registro';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header><p>Trabajo de la unidad numero <strong>#4</strong></p></header>
+      <Seccion_registro></Seccion_registro>
+      <footer>
+        <p>Creado por: <strong>Alitson Martinez</strong></p>
+        <p>Fecha: <strong>26-12-2022</strong></p>
+        <p>Derechos de autor &copy;</p>
+      </footer>
     </div>
   );
 }
+
+
 
 export default App;

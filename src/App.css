@@ -1,38 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
+  color: white;
+  max-width: 1530px;
+  height: 30cm;
+  margin: 0 auto;
+}
+
+.App header {
+  height: 2cm;
+  text-align: left;
+  border-bottom: 1px solid gray;
+  border-radius: 1px 1px 50px 50px;
+  background-color: black;
+}
+
+.App header p {
+  padding: 0.6cm 2cm;
+}
+
+.seccion-registro {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.seccion-registro p strong {
+  color: black;
+}
+
+.seccion-registro p {
+  color: rgb(129, 8, 8);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contenedor {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2cm 0;
+}
+
+.formulario {
+  color: black;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  border: solid rgb(12, 12, 12);
+  border-radius: 8px;
+  background-color: transparent;
+  width: 60%;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.formulario pre {
+  color: white;
+  text-align: center;
+  background-color: black;
+
+}
+
+.formulario h2 {
+  font-size: 2.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formulario .f-datos {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.formulario .f-datos label {
+  margin: 0 auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: gray;
+}
+
+.formulario .f-datos input {
+  height: 0.8cm;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding-left: 10px;
+  color: gray;
+  font-size: 1.2em;
+}
+
+.formulario .btns {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1cm;
+}
+
+.formulario .btns button {
+  width: 4cm;
+  height: 1cm;
+  border: solid rgb(60, 114, 231);
+  border-radius: 8px 8px;
   color: white;
+  background-color: rgb(60, 114, 231);
 }
 
-.App-link {
-  color: #61dafb;
+
+.formulario .btns button:hover {
+  background-color: rgb(212, 59, 21);
+  border: solid rgb(212, 59, 21);
+  transition: all 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulario .btns button:nth-child(1):hover {
+  background-color: rgb(26, 155, 14);
+  border: solid rgb(26, 155, 14);
+  transition: all 1s;
+}
+
+.home {
+  color: gray;
+  text-align: center;
+  height: 5cm;
+}
+
+.home h3 {
+  font-size: 2.0rem;
+}
+
+.home p {
+  margin-top: 10px;
+}
+
+.home p strong {
+  color: black;
+  font-weight: bold;
+}
+
+
+.home button {
+  margin-top: 20px;
+  width: 4cm;
+  height: 1cm;
+  border: solid rgb(60, 114, 231);
+  border-radius: 8px 8px;
+  color: white;
+  background-color: rgb(60, 114, 231);
+}
+
+.home button:hover {
+  background-color: rgb(26, 155, 14);
+  border: solid rgb(26, 155, 14);
+  transition: all 1s;
+}
+
+footer {
+  background-color: black;
+  margin-top: 3cm;
+  position: relative;
+  bottom: 0;
+  width: 1530px;
+  height: 3cm;
+  padding-top: 2cm;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
 }
